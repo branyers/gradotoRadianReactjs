@@ -1,9 +1,9 @@
-import { useState } from "react";
 
-const Input = () =>{
+
+const Input = ({type,value,Changes}) =>{
     return (
-        <div className="App">
-         <input type="text"/>
+        <div>
+         <input type={type} value={value} onChange={Changes} />
         </div>
       );
     }
